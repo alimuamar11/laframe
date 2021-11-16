@@ -24,12 +24,12 @@
     <title>L. A</title>
 
     <!-- vendor css -->
-    <link href="../lib/fontawesome-free/css/all.min.css" rel="stylesheet">
-    <link href="../lib/ionicons/css/ionicons.min.css" rel="stylesheet">
-    <link href="../lib/typicons.font/typicons.css" rel="stylesheet">
+    <link href="/lib/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="/lib/typicons.font/typicons.css" rel="stylesheet">
 
     <!-- azia CSS -->
-    <link rel="stylesheet" href="../css/azia.css">
+    <link rel="stylesheet" href="/css/azia.css">
 
 </head>
 
@@ -48,18 +48,18 @@
         </div><!-- az-content-body -->
         <div class="az-footer">
             <div class="container-fluid">
-                <span>&copy; 2018 Azia Responsive Bootstrap 4 Dashboard Template</span>
-                <span>Designed by: ThemePixels</span>
+                <span>&copy; 2021 A.L</span>
+                <span>Designed by: A.L</span>
             </div><!-- container -->
         </div><!-- az-footer -->
     </div><!-- az-content -->
 
 
-    <script src="../lib/jquery/jquery.min.js"></script>
-    <script src="../lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/lib/jquery/jquery.min.js"></script>
+    <script src="/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-    <script src="../js/azia.js"></script>
-    <script src="../js/dashboard.sampledata.js"></script>
+    <script src="/js/azia.js"></script>
+    <script src="/js/dashboard.sampledata.js"></script>
     <script>
         $(function() {
             'use strict'

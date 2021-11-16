@@ -3,7 +3,7 @@
         <a href="index.html" class="az-logo">L<span>.</span>A</a>
     </div><!-- az-sidebar-header -->
     <div class="az-sidebar-loggedin">
-        <div class="az-img-user online"><img src="../img/img1.jpg" alt=""></div>
+        <div class="az-img-user online"><img src="/img/img1.jpg" alt=""></div>
         <div class="media-body">
             <h6>Amar</h6>
             <span>Premium Member</span>
@@ -22,9 +22,9 @@
                 </nav>
             </li><!-- nav-item -->
             <li class="nav-item">
-                <a href="#" class="nav-link with-sub"><i class="typcn typcn-document"></i>Apps &amp; Pages</a>
+                <a href="#" class="nav-link with-sub"><i class="typcn typcn-document"></i>Pegawai</a>
                 <nav class="nav-sub">
-                    <a href="app-mail.html" class="nav-sub-link">Mailbox</a>
+                    <a href="{{url('/pegawai')}}" class="nav-sub-link">Pegawai</a>
                     <a href="app-chat.html" class="nav-sub-link">Chat</a>
                     <a href="app-calendar.html" class="nav-sub-link">Calendar</a>
                 </nav>

@@ -1,5 +1,5 @@
-@extends('home.index')
-@section('content')
+@extends('dashboard.layouts.main')
+@section('container')
 
 <br />
 <a class="btn btn-primary" href="{{ url('pegawai/create')}}">Tambah</a>

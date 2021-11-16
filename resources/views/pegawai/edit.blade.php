@@ -1,5 +1,6 @@
-@extends('home.index')
-@section('content')
+@extends('dashboard.layouts.main')
+@section('container')
+
 
 <form method="POST" action="{{url('pegawai/'.$model->id)}}">
     @csrf
