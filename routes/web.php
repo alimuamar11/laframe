@@ -14,9 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 
 Route::resource('pegawai', PegawaiController::class);
 //Route get => pegawai => index
@@ -26,3 +27,6 @@ Route::resource('pegawai', PegawaiController::class);
 //Route get => pegawai/{id}/edit =>edit
 //Route put => pegawai/{id} => update
 //Route delete => pegawai/{id} =>delete
+Route::get('/', function () {
+    return view('dashboard.index');
+});
