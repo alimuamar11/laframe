@@ -1,6 +1,7 @@
 <?php
 
-use App\Models\Post;
+use App\Http\Controllers\PostApiController;
+
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -37,45 +38,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
 });
 
 
-//another api without controller
-Route::get('/posts', function () {
-    return Post::all();
-});
-Route::get('/posts/{post}', function (Post $post) {
-    return Post::find($post);
-});
-
-Route::post('/posts', function () {
-    request()->validate([
-        'title' => 'required',
-        'content' => 'required',
-    ]);
-
-    return Post::create([
-        'title' => request('title'),
-        'content' => request('content'),
-    ]);
-});
-
-Route::put('/posts/{post}', function (Post $post) {
-    request()->validate([
-        'title' => 'required',
-        'content' => 'required',
-    ]);
-
-    $success = $post->update([
-        'title' => request('title'),
-        'content' => request('content'),
-    ]);
-
-    return [
-        'success' => $success
-    ];
-});
-Route::delete('/posts/{id}', function (Post $id) {
-    $success = $id->delete();
-    //same id,
-    return [
-        'success' => $success,
-    ];
-});
+//another api with controller
+Route::get('/posts', [PostApiController::class, 'index']);
+Route::get('/posts/{post}', [PostApiController::class, 'show']);
+Route::post('/posts', [PostApiController::class, 'store']);
+Route::put('/posts/{post}', [PostApiController::class, 'update']);
+Route::delete('/posts/{post}', [PostApiController::class, 'destroy']);
