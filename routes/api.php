@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\PostApiController;
-
+use App\Http\Controllers\TransactionController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -44,3 +44,13 @@ Route::get('/posts/{post}', [PostApiController::class, 'show']);
 Route::post('/posts', [PostApiController::class, 'store']);
 Route::put('/posts/{post}', [PostApiController::class, 'update']);
 Route::delete('/posts/{post}', [PostApiController::class, 'destroy']);
+
+//Another api for table transactions
+// Route::get('/transactions', [TransactionController::class, 'index']);
+// Route::post('/transactions', [TransactionController::class, 'store']);
+// Route::PUT('/transactions/{id}', [TransactionController::class, 'update']);
+// Route::get('/transactions/{id}', [TransactionController::class, 'show']);
+// Route::delete('/transactions/{id}', [TransactionController::class, 'destroy']);
+
+//api transactions diatas dpt dipersingkat karena menggunakan method default
+Route::resource('/transactions', TransactionController::class);
